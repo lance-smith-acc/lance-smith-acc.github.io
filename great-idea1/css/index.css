@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+body {
+	width:900px;
+	margin:0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+
+/* Header */
+header {
+	text-align:center;
+	padding:3% 0 2%;
+	background-color:silver;
+	border:2px solid lightslategray;
+}
+
+.fixedMenu {
+	display:table;
+	width:900px;
+	position:fixed;
+	top:0;
+	margin:0 0 3%;
+}
+
+header a {
+	display:inline-block;
+	color:black;
+	vertical-align: middle;
+	font-size: 20px;
+	margin:2%;
+}
+
+header a:hover {
+	background-color: black;
+	color:white;	
+}
+
+.logo {
+	display:inline-block;
+	vertical-align: middle;
+}
+
+/* End Header */
+/* Banner Section */
+.banner {
+	margin-top:15%;
+	width:100%;
+	display:block;
+	text-align: center;
+}
+
+.banner img {
+	width:40%;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 0 0 20%;
+}
+
+.banner a {
+	display:inline-block;
+}
+
+h1 {
+	font-size: 70px;
+	text-align:center;
+	width:30%;
+	display:inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+@keyframes swipeEffect {
+	0% {background-color:white;}
+	50% {background-color:black; color:white;}
+	100% {background-color:white;}
+}
+
+.getStarted {
+	border:1px solid black;
+	padding:3% 15% 3%;
+	font-size:15px;
+	color:black;
+	font-family: Verdana;
+	text-transform:capitalize;
+	animation-name:swipeEffect;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.getStarted:hover {
+	background-color: black;
+	color:white;
+}
+
+
+
+/* End Banner Section */
+
+/* About Section */
+
+section.top {
+	display:inline-block;
+	height:20%;
+	border-top:2px solid grey;
+	padding-top:2%;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+
+.top div {
+	display:inline-block;
+	width:48.5%;
+}
+
+.middle-img {
+	width:100%;
+}
+
+
+section.bottom {
+	margin:3% 0 3%;
+	height:25%;
+	border-bottom:2px solid grey;
+	padding:0 0 5%;
+}
+
+div.bottom {
+	display:inline-block;
+	width:32%;
+}
+
+/* End about section */
+
+.contact p.line3 {
+	line-height: 3;
+}
+
+footer {
+	width:100%;
+	margin:10%;
+	text-align: center;
+}
