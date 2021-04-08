@@ -430,7 +430,7 @@ header .navbar-brand b {
            Hero
 -------------------------*/
 .hero-01 {
-  background: url("../img/background.jpg");
+  background: url("http://placehold.it/1920x1280");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -450,14 +450,14 @@ header .navbar-brand b {
 }
 
 .hero-02 {
-  background: url("../img/background.jpg");
+  background: url("http://placehold.it/1920x1280");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .hero-03 {
-  background: url("../img/background.jpg");
+  background: url("http://placehold.it/1920x1280");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
