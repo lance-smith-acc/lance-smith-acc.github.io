@@ -174,7 +174,7 @@ function typedJS() {
     var options = {
         strings: $(".element").attr('data-elements').split(','),
         typeSpeed: 100,
-        backDelay: 3000,
+        backDelay: 2500,
         backSpeed: 50,
         loop: true
     };

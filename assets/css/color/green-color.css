@@ -97,3 +97,8 @@ header .navbar-brand b,
   color: #0c9b7e !important;
 }
 /*# sourceMappingURL=green-color.css.map */
+
+.bold {
+  font-weight:bold;
+  font-size: 105%;
+}

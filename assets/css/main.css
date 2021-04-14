@@ -109,10 +109,11 @@ a, button {
   border-radius: 1.25rem;
   box-shadow: 3px 3px 8px rgba(55, 84, 170, 0.1), -3px -3px 8px white;
   padding: 5px;
+  text-align: center;
 }
 
 .image-border img {
-  width: 100%;
+  width: 60%;
   border-radius: 1rem;
 }
 
@@ -1694,4 +1695,21 @@ canvas.particles-js-canvas-el {
 .arshia-dark.mono.flat-demo .skill-box .skillbar {
   background-color: #3c3c3c !important;
 }
+
+.art-desc {
+  position: fixed;
+  bottom:1px;
+  right:5px;
+}
+.art-desc a{
+  font-weight: bold;
+  font-size: 70%;
+  color:#3c3c3c !important;
+}
+.art-desc a:hover{
+  color:#5f5f5f !important;
+}
+
+
 /*# sourceMappingURL=main.css.map */
+
