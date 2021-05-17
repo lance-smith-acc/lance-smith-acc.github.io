@@ -1,4 +1,11 @@
 <?php
+
+function console_log( $data ){
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+  }
+
 $data = [];
 if ($_POST) {
     $name = "";
@@ -9,26 +16,28 @@ if ($_POST) {
 
     if (isset($_POST['name'])) {
         $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+        console_log('made it to name check');
     }
 
     if (isset($_POST['email'])) {
         $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
         $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+        console_log('made it to email check');
     }
 
     if (isset($_POST['subject'])) {
         $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+        console_log('made it to subject check');
     }
 
     if (isset($_POST['comments'])) {
         $comments = htmlspecialchars($_POST['comments']);
+        console_log('made it to comments check');
     }
 
 
-    $headers = 'MIME-Version: 1.0' . "\r\n"
-        . 'Content-type: text/html; charset=utf-8' . "\r\n"
-        . 'From: ' . $email . "\r\n";
-    if (mail($recipient, $subject, $comments, $headers)) {
+    if (mail($recipient, $subject, $comments)) {
+        console_log('made it to the end');
         $data = array(
             'status' => 'Congratulation',
             'message' => 'Your message sent successfully.'
@@ -46,3 +55,4 @@ if ($_POST) {
 	);
 }
 echo json_encode($data);
+>
